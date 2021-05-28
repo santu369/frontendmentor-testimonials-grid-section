@@ -52,6 +52,10 @@ body {
   flex-direction: column;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -66,6 +70,7 @@ body {
   border-radius: 0.75em;
   padding: 2em;
   box-shadow: 0 0 2em 0.25em $neu-gray;
+  overflow: hidden;
   &--violet {
     background: url($bg-quotation) no-repeat right top $prim-violet;
     background-position-x: 90%;
@@ -138,6 +143,7 @@ body {
   margin-top: 1rem;
   color: $prim-black-blue;
   font-weight: $font-medium;
+  margin-bottom: 2em;
   &__section {
     margin-top: 1em;
   }
@@ -152,6 +158,62 @@ body {
     }
     &:focus:not(:focus-visible) {
       outline: transparent;
+    }
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    left: 500%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    right: 500%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    top: -50vh;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial {
+    &__header,
+    &__title,
+    &__content {
+      animation: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .testimonial {
+    &__header,
+    &__title,
+    &__content {
+      position: relative;
+    }
+    &__header {
+      animation: scroll-down 0.75s;
+    }
+    &__title {
+      animation: scroll-right 0.75s;
+    }
+    &__content {
+      animation: scroll-left 0.75s;
     }
   }
 }
