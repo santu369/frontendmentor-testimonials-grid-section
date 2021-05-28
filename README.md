@@ -33,8 +33,8 @@ Mobile version
 
 ### Links
 
-- Solution URL: [Code on GitHub](https://github.com/santu369/frontendmentor-huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [GitHub Pages Live URL](https://santu369.github.io/frontendmentor-huddle-landing-page-with-single-introductory-section)
+- Solution URL: [Code on GitHub](https://github.com/santu369/frontendmentor-testimonials-grid-section)
+- Live Site URL: [GitHub Pages Live URL](https://santu369-frontendmentor-testimonials-grid-section.netlify.app/)
 
 ## My process
 
