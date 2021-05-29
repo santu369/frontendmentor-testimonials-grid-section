@@ -32,10 +32,6 @@ body {
   flex-direction: column;
 }
 
-.container {
-  overflow: hidden;
-}
-
 .testimonials {
   display: flex;
   flex-direction: column;
@@ -210,7 +206,7 @@ body {
   }
   .testimonial--huge {
     grid-column: 2/3;
-    grid-row: 1;
+    grid-row: 1/2;
   }
 }
 @media screen and (min-width: 64rem) {
