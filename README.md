@@ -38,7 +38,7 @@ Mobile version
 
 ## My process
 
-Worked on Mobile first approach, then added media queries, adjusting the gird layout for desktop views.
+Worked on Mobile first approach, then added media queries, adjusting the gird layout for desktop views. Added 2 column layout for tablet users.
 Added small animations for the testimonial sections to run on page load. Used prefers-reduced-motion css media query for removing animation for users who set their configuration to minimize animations.
 
 ### Built with
