@@ -183,6 +183,36 @@ body {
     animation: scroll-left 0.75s;
   }
 }
+@media screen and (min-width: 48rem) {
+  .testimonials {
+    display: grid;
+    gap: 1.5em;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, calc(50% - 0.5em));
+    max-width: 55rem;
+  }
+
+  .testimonial--violet {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .testimonial--gray-blue {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .testimonial--white {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .testimonial--black-blue {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .testimonial--huge {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+}
 @media screen and (min-width: 64rem) {
   .container {
     min-height: 100vh;
@@ -191,7 +221,6 @@ body {
   }
 
   .testimonials {
-    display: grid;
     grid-template-columns: repeat(4, calc(25% - 1.85em));
     grid-template-rows: repeat(2, calc(50% - 1em));
     max-width: calc(64rem + 5.5rem + 2em);
